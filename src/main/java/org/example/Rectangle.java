@@ -1,20 +1,15 @@
 package org.example;
 
-import lombok.Getter;
-import lombok.Setter;
 
 public class Rectangle extends GeometricOblect {
-    @Getter
 
-    private double width = 1.0;
-    @Getter
-
-    private double length = 1.0;
+    protected double width = 1.0;
+    protected double length = 1.0;
 
     public void Rectangle(double width , double length){
         this.width = width;
         this.length = length;
-      }
+    }
 
       @Override
     public double getPerimeter(){
@@ -32,15 +27,6 @@ public class Rectangle extends GeometricOblect {
                 "width=" + width +
                 ", length=" + length +
                 '}';
-    }
-
-    public void setWidthLength(double width, double length) {
-        this.width = width;
-        this.length = length;
-    }
-    public void setWidthLength(int percent) {
-        this.width *= percent / 100;
-        this.length *= percent / 100;
     }
 
 }

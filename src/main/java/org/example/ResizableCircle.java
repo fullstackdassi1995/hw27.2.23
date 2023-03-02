@@ -3,10 +3,10 @@ package org.example;
 public class ResizableCircle extends Circle implements IResizable{
     @Override
     public void resize(int percent) {
-        setRadius(percent);
+        this.radius *= percent / 100;
       }
     public void ResizableCircle(double radius){
-           setRadius(radius);
+           this.radius = radius;
     }
 
 
